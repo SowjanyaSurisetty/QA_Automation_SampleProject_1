@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200523 23:32:03.023" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\sowja\eclipse-workspace\SampleProject_1" id="s1" name="SampleProject 1">
+<suite source="C:\Users\sowja\eclipse-workspace\SampleProject_1\Just_Eat.robot" id="s1-s1" name="Just Eat">
+<test id="s1-s1-t1" name="TC001_Open_Browser.">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200523 23:32:04.137" level="INFO">Opening browser 'chrome' to base url 'https://www.just-eat.co.uk/'.</msg>
+<status status="PASS" endtime="20200523 23:32:12.918" starttime="20200523 23:32:04.136"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:12.920" critical="yes" starttime="20200523 23:32:04.104"></status>
+</test>
+<test id="s1-s1-t2" name="Tc_Maximize_browser_window.">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200523 23:32:15.194" starttime="20200523 23:32:12.926"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:15.195" critical="yes" starttime="20200523 23:32:12.924"></status>
+</test>
+<test id="s1-s1-t3" name="Tc_Apply_implicit_wait.">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" endtime="20200523 23:32:15.203" starttime="20200523 23:32:15.198"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:15.204" critical="yes" starttime="20200523 23:32:15.197"></status>
+</test>
+<test id="s1-s1-t4" name="Tc002_Given_Postal_code">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name='postcode']</arg>
+<arg>AR51 1AA</arg>
+</arguments>
+<msg timestamp="20200523 23:32:15.211" level="INFO">Typing text 'AR51 1AA' into text field '//input[@name='postcode']'.</msg>
+<status status="PASS" endtime="20200523 23:32:15.754" starttime="20200523 23:32:15.208"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:15.755" critical="yes" starttime="20200523 23:32:15.206"></status>
+</test>
+<test id="s1-s1-t5" name="When_I_Click_On_SearchButton_for_Restaurents">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20200523 23:32:15.759" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" endtime="20200523 23:32:28.469" starttime="20200523 23:32:15.758"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:28.470" critical="yes" starttime="20200523 23:32:15.756"></status>
+</test>
+<test id="s1-s1-t6" name="Then_Should_Contain_Restaurent_names">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>open restaurants</arg>
+</arguments>
+<msg timestamp="20200523 23:32:29.466" level="INFO">Current page contains text 'open restaurants'.</msg>
+<status status="PASS" endtime="20200523 23:32:29.467" starttime="20200523 23:32:28.475"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:29.468" critical="yes" starttime="20200523 23:32:28.472"></status>
+</test>
+<test id="s1-s1-t7" name="Tc003_Given_RestaurantName_For_Search">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:32:39.473" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:32:39.474" starttime="20200523 23:32:29.471"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='dish-search']</arg>
+<arg>Pizza-Hut shell Menu</arg>
+</arguments>
+<msg timestamp="20200523 23:32:39.478" level="INFO">Typing text 'Pizza-Hut shell Menu' into text field '//input[@id='dish-search']'.</msg>
+<status status="PASS" endtime="20200523 23:32:40.863" starttime="20200523 23:32:39.475"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20200523 23:32:40.865" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" endtime="20200523 23:32:43.137" starttime="20200523 23:32:40.865"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:43.138" critical="yes" starttime="20200523 23:32:29.470"></status>
+</test>
+<test id="s1-s1-t8" name="When_Clicked_On_Search_By_Reataurant">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Clicked On Search</arg>
+</arguments>
+<msg timestamp="20200523 23:32:43.142" level="INFO">Clicked On Search</msg>
+<status status="PASS" endtime="20200523 23:32:43.143" starttime="20200523 23:32:43.141"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:43.144" critical="yes" starttime="20200523 23:32:43.139"></status>
+</test>
+<test id="s1-s1-t9" name="Then_Page_Should_Contain_Pizza-Hut shell Menu">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@class='c-listing-item-info']</arg>
+</arguments>
+<msg timestamp="20200523 23:32:43.148" level="INFO">Clicking element '//*[@class='c-listing-item-info']'.</msg>
+<status status="PASS" endtime="20200523 23:32:45.917" starttime="20200523 23:32:43.147"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Pizza Hut - Shell Menu</arg>
+</arguments>
+<msg timestamp="20200523 23:32:46.148" level="INFO">Current page contains text 'Pizza Hut - Shell Menu'.</msg>
+<status status="PASS" endtime="20200523 23:32:46.148" starttime="20200523 23:32:45.918"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:32:56.150" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:32:56.152" starttime="20200523 23:32:46.149"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:32:56.153" critical="yes" starttime="20200523 23:32:43.145"></status>
+</test>
+<test id="s1-s1-t10" name="Tc004_When_Select_Pizzas">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Pizzas']</arg>
+</arguments>
+<msg timestamp="20200523 23:32:56.162" level="INFO">Clicking element '//a[text()='Pizzas']'.</msg>
+<status status="PASS" endtime="20200523 23:32:56.338" starttime="20200523 23:32:56.160"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:33:06.343" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:33:06.343" starttime="20200523 23:32:56.341"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:06.344" critical="yes" starttime="20200523 23:32:56.156"></status>
+</test>
+<test id="s1-s1-t11" name="Then_Select_An_Option">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@value='27884977']/following::button[1]</arg>
+</arguments>
+<msg timestamp="20200523 23:33:06.350" level="INFO">Clicking element '//input[@value='27884977']/following::button[1]'.</msg>
+<status status="PASS" endtime="20200523 23:33:06.474" starttime="20200523 23:33:06.349"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:33:16.476" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:33:16.478" starttime="20200523 23:33:06.475"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:16.480" critical="yes" starttime="20200523 23:33:06.346"></status>
+</test>
+<test id="s1-s1-t12" name="Tc005When_Choose_your_Small_Crust">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@class='c-menupicker__dialog show']/div/form/div[2]/label/input/following::div[text()='Please Choose Your Small Crust']</arg>
+</arguments>
+<msg timestamp="20200523 23:33:16.494" level="INFO">Clicking element '//*[@class='c-menupicker__dialog show']/div/form/div[2]/label/input/following::div[text()='Please Choose Your Small Crust']'.</msg>
+<status status="PASS" endtime="20200523 23:33:16.708" starttime="20200523 23:33:16.491"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:33:26.709" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:33:26.710" starttime="20200523 23:33:16.709"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:26.711" critical="yes" starttime="20200523 23:33:16.483"></status>
+</test>
+<test id="s1-s1-t13" name="Then_Choose_Classic_Crust_with_Garlic_Sprinkle">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@class='c-menupicker__option-details']/div[text()='Classic Crust With Garlic Sprinkle']</arg>
+</arguments>
+<msg timestamp="20200523 23:33:26.718" level="INFO">Clicking element '//*[@class='c-menupicker__option-details']/div[text()='Classic Crust With Garlic Sprinkle']'.</msg>
+<status status="PASS" endtime="20200523 23:33:26.926" starttime="20200523 23:33:26.714"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:33:36.928" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:33:36.930" starttime="20200523 23:33:26.927"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:36.932" critical="yes" starttime="20200523 23:33:26.712"></status>
+</test>
+<test id="s1-s1-t14" name="Then_Skip_Extras">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@value='Skip Extras']</arg>
+</arguments>
+<msg timestamp="20200523 23:33:36.943" level="INFO">Clicking element '//*[@value='Skip Extras']'.</msg>
+<status status="PASS" endtime="20200523 23:33:37.237" starttime="20200523 23:33:36.940"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:33:47.240" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:33:47.242" starttime="20200523 23:33:37.238"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:47.244" critical="yes" starttime="20200523 23:33:36.936"></status>
+</test>
+<test id="s1-s1-t15" name="Then_Click_On_Add_To_Basket">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@value='Add to Basket']</arg>
+</arguments>
+<msg timestamp="20200523 23:33:47.255" level="INFO">Clicking element '//*[@value='Add to Basket']'.</msg>
+<status status="PASS" endtime="20200523 23:33:47.564" starttime="20200523 23:33:47.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200523 23:33:57.566" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200523 23:33:57.567" starttime="20200523 23:33:47.565"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:57.567" critical="yes" starttime="20200523 23:33:47.248"></status>
+</test>
+<test id="s1-s1-t16" name="Then_Check_out">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='checkoutButton']</arg>
+</arguments>
+<msg timestamp="20200523 23:33:57.572" level="INFO">Clicking element '//button[@class='checkoutButton']'.</msg>
+<status status="PASS" endtime="20200523 23:33:59.120" starttime="20200523 23:33:57.571"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:33:59.121" critical="yes" starttime="20200523 23:33:57.569"></status>
+</test>
+<test id="s1-s1-t17" name="And_Close_Browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200523 23:34:01.405" starttime="20200523 23:33:59.125"></status>
+</kw>
+<status status="PASS" endtime="20200523 23:34:01.407" critical="yes" starttime="20200523 23:33:59.123"></status>
+</test>
+<status status="PASS" endtime="20200523 23:34:01.415" starttime="20200523 23:32:03.743"></status>
+</suite>
+<status status="PASS" endtime="20200523 23:34:01.445" starttime="20200523 23:32:03.676"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="17">Critical Tests</stat>
+<stat fail="0" pass="17">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="SampleProject 1" pass="17">SampleProject 1</stat>
+<stat fail="0" id="s1-s1" name="Just Eat" pass="17">SampleProject 1.Just Eat</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
