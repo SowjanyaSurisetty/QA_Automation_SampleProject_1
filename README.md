@@ -214,38 +214,38 @@ Feature: Just_Eat
 
 file:///C:/Users/sowja/eclipse-workspace/robot_projects/report.html
 
-![](FirstReport.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/FirstReport.png)
 
-![](FirstReport1.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/FirstReport1.png)
  
  
 ## Second Report: 
 
 file:///C:/Users/sowja/eclipse-workspace/robot_projects/log.html
 
- ![](SecondReport.png)
+ ![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/SecondReport.png)
  
- ![](SecondReport1.png)
+ ![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/SecondReport1.png)
  
 ## This is the Scenario1:
 
-![](Scenario1.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/Scenario1.png)
  
 
 ## This is Scenario 2:
 
-![](Scenario2.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/Scenario2.png)
  
 ## Scenario 3:
 
-![](Scenario3.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/Scenario3.png)
  
 ## Scenario 4: 
 
-![](Scenario4.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/Scenario4.png)
  
 ## Third Report:
 
 file:///C:/Users/sowja/eclipse-workspace/robot_projects/output.xml
 
-![](ThirdReport.png)
+![](https://github.com/SowjanyaSurisetty/QA-test/blob/master/ThirdReport.png)
