@@ -113,7 +113,8 @@ Feature: Just_Eat
 	}
 
 
-# Here I used RobotFramework for that tool I Installed the following for the set up
+## Here I used RobotFramework.
+### In order to setup RobotFramework you need to install the following
 
 - Install Python
 - Install WX Python
