@@ -138,6 +138,8 @@ Feature: Just_Eat
   - Select Robot Framework->Installed frameworks
   - Click on Apply and close 
   
+## Note: Latest Chrome driver/Browser Drivers should be placed in the Python software then only this project executes
+  
 ## Create a Robot Project
 
   - Select File->New->Robot Project
